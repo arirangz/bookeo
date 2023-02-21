@@ -1,7 +1,9 @@
 <?php
-    require_once 'templates/header.php';
+spl_autoload_register();
 
-    require_once 'templates/home.php';
+use App\Controller\Controller;
 
-    require_once 'templates/footer.php';
+$controller = new Controller();
+$controller->route();
+
 ?>
