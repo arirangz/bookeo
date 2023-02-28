@@ -32,6 +32,10 @@ class PageController extends Controller
 
     }
 
+    /*
+    Exemple d'appel depuis l'url
+        ?controller=page&action=about
+    */
     protected function about()
     {
         /* On passe en premier paramètre la page à charger
@@ -41,9 +45,12 @@ class PageController extends Controller
             'test' => 'abc',
             'test2' => 'abc2',
         ]);
-
     }
 
+    /*
+    Exemple d'appel depuis l'url
+        ?controller=page&action=home
+    */
     protected function home()
     {
         $this->render('page/home', [

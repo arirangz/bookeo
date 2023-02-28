@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^a-propos/$ /studi/live/bookeo/index.php?controller=page&action=about
